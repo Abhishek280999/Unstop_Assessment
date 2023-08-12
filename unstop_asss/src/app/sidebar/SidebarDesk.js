@@ -58,7 +58,7 @@ const SidebarDesk = ({ setOpen }) => {
                     <span>My Library</span>
                 </div>
             </div>
-            <div onClick={()=>notify("Only Admins have Access!")} className='flex flex-col justify-center items-center px-2 py-4  border-t-2 border-dotted border-black space-y-3 cursor-pointer'>
+            <div onClick={()=>alert("Only Admins have Access!")} className='flex flex-col justify-center items-center px-2 py-4  border-t-2 border-dotted border-black space-y-3 cursor-pointer'>
                 <span style={{ color: '#D63500', backgroundColor: 'Accent/red light', border: '1px solid #D63500', borderRadius: '22px', padding: '6px, 8px, 6px, 8px', width: '47px', height: '18px' }}>Admin</span>
                 <img src={Admin} alt="Round" width={20} height={20} />
                 <span>Round Status</span>

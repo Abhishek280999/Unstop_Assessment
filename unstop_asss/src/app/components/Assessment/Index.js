@@ -74,7 +74,7 @@ const Index = () => {
                 <Dialog as="div" className="relative z-10 " initialFocus={cancelButtonRef} onClose={setOpenDialog}>
 
                     <div className="fixed inset-0 z-10 overflow-y-auto bg-black/30 bg-opacity-25">
-                        <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+                        <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0 ">
                             <Transition.Child
                                 as={Fragment}
                                 enter="ease-out duration-300"
@@ -84,7 +84,7 @@ const Index = () => {
                                 leaveFrom="opacity-100 translate-y-0 sm:scale-100"
                                 leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
                             >
-                                <Dialog.Panel className="w-full max-w-5xl transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                                <Dialog.Panel className=" w-[700px] max-w-5xl transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
 
                                     <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-900 border-b-2 pb-2">
                                         Create New Assessment
@@ -130,7 +130,7 @@ const Index = () => {
                                                     <div className='flex flex-wrap justify-start items-center p-4 border-2 gap-2 rounded-lg'>
                                                         {
                                                             skills?.map((item, index) => {
-                                                                return <div key={index} className='flex justify-center items-center bg-orange-300 py-1 px-4 gap-4 rounded-xl' >
+                                                                return <div key={index} className='flex justify-center items-center bg-blue-100 font-semibold py-1 px-4 gap-4 rounded-xl' >
                                                                     <span>{item}</span>
                                                                     <span onClick={() => removeSkills(item)} className='text-xl cursor-pointer'>×</span>
                                                                 </div>
@@ -155,18 +155,11 @@ const Index = () => {
                                                     <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
                                                         <button
                                                             type="submit"
-                                                            className="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto"
+                                                            className="inline-flex w-full  justify-center rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-900-500 sm:ml-3 sm:w-auto"
                                                         >
-                                                            Deactivate
+                                                            Next
                                                         </button>
-                                                        <button
-                                                            type="button"
-                                                            className="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
-                                                            onClick={() => setOpenDialog(false)}
-                                                            ref={cancelButtonRef}
-                                                        >
-                                                            Cancel
-                                                        </button>
+                                                       
                                                     </div>
                                                 </div>
                                             </form>
@@ -194,13 +187,14 @@ const data = [
         purpose: 'Job',
         questions: 24,
         duration: "00:04:00",
-        date: '20 Apr 2023'
+        date: '20 Dec 2023'
     },
     {
         title: 'React Assessment',
         purpose: 'Intern',
         questions: 50,
         duration: "00:02:00",
-        date: '11 Sep 2023'
+        date: '11 Oct 2023'
     },
+    
 ]

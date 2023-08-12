@@ -41,7 +41,7 @@ const Overview = ({ data }) => {
     }, [isScreenWidthExceeded]);
 
     return (
-        <div className='p-1 sm:p-2 lg:p-6' style={{ width: '90vw' }}>
+        <div className='p-1 sm:p-2 lg:p-6' style={{ width: '89vw' }}>
             <div className='flex justify-between items-center'>
                 <div className='subheading md:subheading1 my-4'>Assessment Overview</div>
                 <div className='flex justify-center items-center md:hidden'>
@@ -56,21 +56,21 @@ const Overview = ({ data }) => {
                     <div className='flex flex-wrap justify-start items-center border-2  rounded-2xl py-2 xl:py-0 px-2 md:px-6 space-y-2 md:space-y-0 space-x-1 md:space-x-0 w-fit h-fit'>
                 <div className='border-2 xl:border-0 xl:border-r-2 border-r-2 rounded-lg xl:rounded-none pl-2 py-2 md:py-4 w-40'>
                     <span className='subheading1 pr-2 md:pr-6 ' >Total Assessment</span>
-                    <div className='flex items-center gap-6 my-4'>
+                    <div className='flex items-center gap-4 my-4'>
                         <img src={TA} alt='ta' />
                         <span className='number md:number'>{data?.length > 0 ? data.length : 0}</span>
                     </div>
                 </div>
                 <div className='border-2 xl:border-0 xl:border-r-2 md:border-r-2 rounded-lg xl:rounded-none py-2 md:py-4'>
                 <span className='subheading1 px-2 md:px-6'>Candidates</span>
-                    <div className='flex items-center gap-6 my-4 px-4 md:px-6 w-[350px]'>
+                    <div className='flex items-center gap-5 my-4 px-4 md:px-6 w-[320px]'>
                         <img src={C} alt='ta' />
                         <span className='border-r-2 pr-4'>
-                            <div> <span className='number md:number'>11,145</span> <span className='numberMini'>+89</span> </div>
+                            <div> <span className='numbersm md:number'>11,145</span> <span className='numberMini'>+89</span> </div>
                             <div className='miniHeading'>Total Candidate</div>
                         </span>
                         <span>
-                            <div> <span className='number md:number '>1,14</span> <span className='numberMini'>+89</span> </div>
+                            <div> <span className='numbersm md:number '>1,14</span> <span className='numberMini'>+89</span> </div>
                             <div className='miniHeading'>Who Attempted</div>
                         </span>
                     </div>
@@ -79,28 +79,28 @@ const Overview = ({ data }) => {
                 <div className='border-2 xl:border-0 xl:border-r-2 md:border-r-2 rounded-lg xl:rounded-none py-2 md:py-4'>
                 
                 <span className='subheading1 px-0 sm:px-2 md:px-6'>Candidates Source</span>
-                    <div className='flex items-center gap-6 my-4 px-0 md:px-6 w-[510px]'>
+                    <div className='flex items-center gap-5 my-4 px-0 md:px-6 w-[415px]'>
                         <img src={CS} alt='ta' />
                         <span className='border-r-2 pr-0 sm:pr-4'>
-                            <div> <span className='number md:number'>11,000</span> <span className='numberMini'>+89</span> </div>
+                            <div> <span className='numbersm md:number'>11,000</span> <span className='numberMini'>+89</span> </div>
                             <div className='miniHeading'>Email</div>
                         </span>
                         <span className='border-r-2 pr-0 sm:pr-4'>
-                            <div> <span className='number md:number'>11,000</span> <span className='numberMini'>+89</span> </div>
+                            <div> <span className='numbersm md:number'>145</span> <span className='numberMini'>+89</span> </div>
                             <div className='miniHeading'>Social Share</div>
                         </span>
                         <span>
-                            <div> <span className='number md:number'>11,000</span> <span className='numberMini'>+89</span> </div>
+                            <div> <span className='numbersm md:number'>175</span> <span className='numberMini'>+89</span> </div>
                             <div className='miniHeading'>Unique Links</div>
                         </span>
                     </div>
                     
                 </div>
-                <div className='border-2 xl:border-0 rounded-lg xl:rounded-none pl-2 py-2 md:py-4 w-52'>
+                <div className='border-2 xl:border-0 rounded-lg xl:rounded-none pl-2 py-2 md:py-4 w-52 '>
                 <span className='subheading1 px-4 md:px-6'>Total Purpose</span>
-                    <div className='flex items-center gap-6 my-4 px-4 md:px-6'>
+                    <div className='flex items-center   gap-5 my-4 px-4 md:px-6'>
                         <img src={TP} alt='ta' />
-                        <span className='number md:number'>11</span>
+                        <span className='numbersm md:number'>11</span>
                     </div>
                 </div>
 
