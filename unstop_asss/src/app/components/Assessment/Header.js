@@ -18,6 +18,7 @@ const Header = ({setOpen}) => {
     return '';
   };
 
+  
   useEffect(() => {
   setOpen(true)
   }, [selectedItem])
